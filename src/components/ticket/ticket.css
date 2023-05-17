@@ -1,0 +1,32 @@
+.myCard {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    flex-direction: row-reverse;
+}
+.card-img-top{
+    width: 33%;
+}
+.card-body{
+    width: 66%;
+}
+.img-bg{
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.color-bg{
+    width: "100%";
+    height: "100%" 
+}
+
+/* mobile phone */
+@media all and (max-width: 768px) {
+    .myCard {
+        flex-basis: 100%;
+    }
+}
