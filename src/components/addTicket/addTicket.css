@@ -1,0 +1,55 @@
+.dialog-sub-title{
+    width:  100%;
+height: 57px;
+background-color: #CAD127;
+margin-bottom:60px
+}
+.MuiDialog-paperScrollPaper {
+        max-height: 100% !important;
+
+}
+.MuiDialogTitle-root{
+    padding: 0 !important;
+}
+
+.MuiDialogContent-root {
+    
+    direction: rtl !important;
+}
+.MuiDialogTitle-root{
+
+direction: rtl !important;
+}
+.MuiFormHelperText-root{
+    text-align: right !important;
+}
+.close-dialog{
+    transition: width 0.5s ease;
+}
+
+/* mobile phone */
+@media all and (min-width: 768px) {
+    
+    .MuiDialog-paperWidthSm{
+        height: -webkit-fill-available!important;
+    }
+    .MuiDialog-paper{
+        margin: 0px!important;
+    }
+    .MuiDialog-scrollPaper {
+        display: flex !important;
+        justify-content: flex-start !important;
+        flex-direction: row-reverse !important;
+            align-items: flex-start!important;
+        }
+        
+        .MuiDialog-paperWidthSm {
+            width: 393px;
+        }
+}
+.dialog-icon{
+    margin-left: 10px;
+}
+.MuiFormControl-marginDense{
+    margin-top:0px!important;
+}

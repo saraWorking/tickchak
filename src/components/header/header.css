@@ -1,0 +1,36 @@
+.header {
+    position: sticky;
+    top: 0px;
+    background-color: #292929;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 25px;
+    padding-bottom: 5px;
+    z-index: 2;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+.header-action {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 50%
+}
+.MuiIconButton-root{
+   color: #FFFFFF !important
+}
+
+/* mobile phone */
+@media all and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+}

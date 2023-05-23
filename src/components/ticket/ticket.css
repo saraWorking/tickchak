@@ -4,29 +4,76 @@
     flex-direction: column;
 }
 
-.card{
+.card {
     flex-direction: row-reverse;
+    max-height: 114px;
+
 }
-.card-img-top{
-    width: 33%;
+
+.card-img-top {
+    width: 88px;
+    position: relative;
+    transition: width 0.5s ease;
 }
-.card-body{
-    width: 66%;
+
+.card-body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-.img-bg{
+
+.img-bg {
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.color-bg{
-    width: "100%";
-    height: "100%" 
+
+.card-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+
+.card-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card-data p {
+    font-size: 25px;
+    margin-bottom:0px
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.card-title p {
+    font-size: 25px;
+}
+
+.card-subtitle {
+    font-size: 12px
+}
+.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+background-color: #76D6E8 !important;
+}
+.CircularProgressbar .CircularProgressbar-text{
+    font-weight: bold;
 }
 
 /* mobile phone */
 @media all and (max-width: 768px) {
     .myCard {
         flex-basis: 100%;
+    }
+
+    .MuiFormControlLabel-root {
+        margin-right: 53px !important;
     }
 }
